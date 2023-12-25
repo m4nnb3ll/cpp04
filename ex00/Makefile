@@ -1,14 +1,14 @@
 NAME = animal
 
-CC = c++
-CFLAGS = -Wall -Werror -Wextra -std=c++98
+CXX = c++
+CXXFLAGS = -Wall -Werror -Wextra -std=c++98
 
 SRCS = main.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
 $(NAME): $(OBJS)
-	$(CC) $(OBJS) -o $(NAME)
+	$(CXX) $(OBJS) -o $(NAME)
 
 all: $(NAME)
 
